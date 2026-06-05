@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { FoamLogo, CloseIcon } from "@/components/icons";
+import { CloseIcon } from "@/components/icons";
 import { FilterBar } from "@/components/overview/FilterBar";
 import { InfoPanel } from "@/components/overview/InfoPanel";
 import { artists, categories, descriptionHtml, aboutLabel, asideTitle, copyright } from "@/content/overview";
@@ -38,9 +38,15 @@ export function Overview() {
     >
       <OverviewScene artists={artists} activeFilter={activeFilter} focus={focus} onSelect={select} />
 
-      {/* foam wordmark, top-left */}
-      <a href="/" aria-label="foam — Talent 2024" className="pointer-events-auto absolute left-5 top-5 z-10">
-        <FoamLogo className="h-7 w-auto" />
+      {/* ROOFFILM wordmark, top-left — rotated 90° counter-clockwise (vertical) */}
+      <a href="/" aria-label="ROOFFILM" className="pointer-events-auto absolute left-4 top-5 z-10">
+        <div className="relative h-[150px] w-[38px]">
+          <img
+            src="/images/logo.gif"
+            alt="ROOFFILM"
+            className="absolute left-1/2 top-1/2 w-[150px] max-w-none -translate-x-1/2 -translate-y-1/2 -rotate-90"
+          />
+        </div>
       </a>
 
       {/* close filter, top-center */}
