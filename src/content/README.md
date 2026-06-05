@@ -6,7 +6,7 @@ rebuilds). You do not need to touch any component code.
 
 ```
 src/content/
-  overview.ts                  ← the homepage ( / and /talent-2024 )
+  overview.ts                  ← the homepage ( / and / )
   artists/
     index.ts                   ← registry: which slugs have a real exhibition
     cristobal-ascencio.ts      ← one artist's exhibition

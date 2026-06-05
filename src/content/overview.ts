@@ -1,5 +1,5 @@
 // ════════════════════════════════════════════════════════════════════════
-// HOMEPAGE CONTENT — edit freely. Changes here change the / and /talent-2024 pages.
+// HOMEPAGE CONTENT — edit freely. Changes here change the / and / pages.
 // (Seeded once from the live site by scripts/scaffold-content.mjs; now hand-owned.)
 // ════════════════════════════════════════════════════════════════════════
 import type { OverviewArtist, Category } from "@/types/foam";
@@ -90,8 +90,8 @@ export const artists: OverviewArtist[] = [
     "slug": "akshay-mahajan",
     "name": "Akshay Mahajan",
     "exhibitionName": "People of Clay",
-    "image": "/images/foam/akshay-overview-page.png",
-    "alt": "Image of a woman sitting on a concrete block, framed by two black and white identical portraits of a young woman. © Akshay Mahajan",
+    "image": "/images/art-066.png",
+    "alt": "頂樓先生影像製作 — 作品截圖",
     "title": "From the series People of Clay",
     "copyright": "Akshay Mahajan",
     "position": {

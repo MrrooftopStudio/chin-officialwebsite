@@ -37,7 +37,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
       <p className="max-w-[40ch] text-[13px] text-white/50">
         This talent&apos;s full online exhibition is part of the live Foam Talent 2024-2025 experience.
       </p>
-      <Link href="/talent-2024" className="mt-2 border border-white/40 px-4 py-2 text-[11px] uppercase tracking-wide hover:border-white">
+      <Link href="/" className="mt-2 border border-white/40 px-4 py-2 text-[11px] uppercase tracking-wide hover:border-white">
         ← back to overview
       </Link>
     </main>

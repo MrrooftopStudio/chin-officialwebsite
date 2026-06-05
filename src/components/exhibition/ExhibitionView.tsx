@@ -207,7 +207,7 @@ export function ExhibitionView({ exhibition }: { exhibition: Exhibition }) {
           >
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/60">next exhibition</span>
             <Link
-              href={`/talent-2024/artist/${exhibition.nextExhibition.slug}`}
+              href={`/artist/${exhibition.nextExhibition.slug}`}
               className="font-serif text-[clamp(1.5rem,4vw,3.5rem)] italic text-white transition-opacity hover:opacity-70"
             >
               {exhibition.nextExhibition.name}
@@ -218,7 +218,7 @@ export function ExhibitionView({ exhibition }: { exhibition: Exhibition }) {
 
       {/* back button */}
       <Link
-        href="/talent-2024"
+        href="/"
         aria-label="Back to overview"
         className="absolute left-5 top-5 z-30 flex items-center border border-white/40 px-3 py-2 text-white/90 transition-colors hover:border-white"
       >

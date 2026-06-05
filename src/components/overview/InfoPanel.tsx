@@ -58,7 +58,7 @@ export function InfoPanel({
           <ul className="space-y-1">
             {artists.map((a) => (
               <li key={a.id}>
-                <a href={`/talent-2024/artist/${a.slug}`} className="text-[13px] text-white/85 transition-colors hover:text-white">
+                <a href={`/artist/${a.slug}`} className="text-[13px] text-white/85 transition-colors hover:text-white">
                   {a.name}
                 </a>
               </li>

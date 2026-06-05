@@ -47,3 +47,6 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# Source portfolio screenshots (1.6GB raw assets — not for git)
+平面輸出（作品截圖）/

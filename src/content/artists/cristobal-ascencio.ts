@@ -1,6 +1,6 @@
 // ════════════════════════════════════════════════════════════════════════
 // ARTIST EXHIBITION — Cristóbal Ascencio. Edit freely; changes show on
-// /talent-2024/artist/cristobal-ascencio.
+// /artist/cristobal-ascencio.
 //   • intro       — the opening title card (artist name + colors)
 //   • audio       — the soundscape track (play button)
 //   • sections[]  — the horizontal panels, in order:

@@ -24,7 +24,7 @@ export function Overview() {
   const toggleFilter = (name: string) =>
     setActiveFilter((cur) => (cur?.toLowerCase() === name.toLowerCase() ? null : name));
 
-  const select = (a: OverviewArtist) => router.push(`/talent-2024/artist/${a.slug}`);
+  const select = (a: OverviewArtist) => router.push(`/artist/${a.slug}`);
 
   const focusCat = activeFilter ? categories.find((c) => c.name.toLowerCase() === activeFilter.toLowerCase()) : null;
   const focus = focusCat ? { x: focusCat.x, y: focusCat.y } : null;
@@ -39,7 +39,7 @@ export function Overview() {
       <OverviewScene artists={artists} activeFilter={activeFilter} focus={focus} onSelect={select} />
 
       {/* foam wordmark, top-left */}
-      <a href="/talent-2024" aria-label="foam — Talent 2024" className="pointer-events-auto absolute left-5 top-5 z-10">
+      <a href="/" aria-label="foam — Talent 2024" className="pointer-events-auto absolute left-5 top-5 z-10">
         <FoamLogo className="h-7 w-auto" />
       </a>
 
