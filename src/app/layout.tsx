@@ -1,20 +1,56 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// Monument Grotesk — primary sans (foam's UI typeface)
+const monument = localFont({
+  variable: "--font-mg",
+  src: [
+    { path: "../fonts/MonumentGrotesk-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/MonumentGrotesk-Italic.woff2", weight: "400", style: "italic" },
+  ],
+  fallback: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Kormelink — editorial serif (welcome prose, italic exhibition titles)
+const kormelink = localFont({
+  variable: "--font-kormelink",
+  src: [
+    { path: "../fonts/Kormelink-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/Kormelink-Italic.woff2", weight: "400", style: "italic" },
+  ],
+  fallback: ["Georgia", "Times New Roman", "serif"],
+});
+
+const monumentMono = localFont({
+  variable: "--font-mg-mono",
+  src: [{ path: "../fonts/MonumentGrotesk-Mono.woff2", weight: "400", style: "normal" }],
+  fallback: ["ui-monospace", "monospace"],
+});
+
+const purpleHaze = localFont({
+  variable: "--font-purple-haze",
+  src: [{ path: "../fonts/purple-haze.woff2", weight: "100 700", style: "normal" }],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  metadataBase: new URL("http://localhost:3000"),
+  title: "Talent 2024-2025 – Digital Exhibition | Foam: All about photography",
+  description:
+    "Foam proudly presents 20 Talents selected for Foam Talent 2024-2025 in this interactive digital exhibition, highlighting the connections and unique artistic viewpoints.",
+  icons: {
+    icon: [
+      { url: "/seo/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/seo/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/seo/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Talent 2024-2025 | Digital Exhibition – Foam: All about photography",
+    type: "website",
+    images: ["/images/foam/overview_asset_2.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -25,9 +61,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${monument.variable} ${kormelink.variable} ${monumentMono.variable} ${purpleHaze.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
