@@ -40,11 +40,11 @@ export function Overview() {
 
       {/* ROOFFILM wordmark, top-left — rotated 90° counter-clockwise (vertical) */}
       <a href="/" aria-label="ROOFFILM" className="pointer-events-auto absolute left-4 top-5 z-10">
-        <div className="relative h-[150px] w-[38px]">
+        <div className="relative h-[75px] w-[19px]">
           <img
             src="/images/logo.gif"
             alt="ROOFFILM"
-            className="absolute left-1/2 top-1/2 w-[150px] max-w-none -translate-x-1/2 -translate-y-1/2 -rotate-90"
+            className="absolute left-1/2 top-1/2 w-[75px] max-w-none -translate-x-1/2 -translate-y-1/2 -rotate-90"
           />
         </div>
       </a>
