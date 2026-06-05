@@ -36,9 +36,9 @@ const purpleHaze = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
-  title: "Talent 2024-2025 – Digital Exhibition | Foam: All about photography",
+  title: "Rooffilm",
   description:
-    "Foam proudly presents 20 Talents selected for Foam Talent 2024-2025 in this interactive digital exhibition, highlighting the connections and unique artistic viewpoints.",
+    "Rooffilm（頂樓影視）— a film and image production studio. Selected commercial, portrait and art-direction works.",
   icons: {
     icon: [
       { url: "/seo/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     apple: "/seo/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Talent 2024-2025 | Digital Exhibition – Foam: All about photography",
+    title: "Rooffilm",
     type: "website",
     images: ["/images/foam/overview_asset_2.jpg"],
   },

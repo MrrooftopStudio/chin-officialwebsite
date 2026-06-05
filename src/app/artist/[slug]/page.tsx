@@ -13,9 +13,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const artist = artists.find((a) => a.slug === slug);
   const name = artist?.name ?? "Artist";
   return {
-    title: `${name} – Foam Talent 2024-2025 – Digital Exhibition | Foam: all about photography`,
+    title: `${name} – Rooffilm`,
     description: artist?.exhibitionName
-      ? `${artist.exhibitionName} — ${name} in the Foam Talent 2024-2025 digital exhibition.`
+      ? `${artist.exhibitionName} — ${name} | Rooffilm`
       : undefined,
   };
 }
@@ -35,7 +35,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
       <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/60">{artist.name}</p>
       <h1 className="max-w-[18ch] font-serif text-[clamp(1.75rem,5vw,4rem)] italic leading-tight">{artist.exhibitionName}</h1>
       <p className="max-w-[40ch] text-[13px] text-white/50">
-        This talent&apos;s full online exhibition is part of the live Foam Talent 2024-2025 experience.
+        This work is part of the Rooffilm portfolio.
       </p>
       <Link href="/" className="mt-2 border border-white/40 px-4 py-2 text-[11px] uppercase tracking-wide hover:border-white">
         ← back to overview

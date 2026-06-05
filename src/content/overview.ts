@@ -11,21 +11,17 @@ export const introText = "artists shaping the future of photography";
 export const asideTitle = "selected artists";
 
 /** Footer/credit line in the info panel. */
-export const copyright = "All image content on talent.foam.org are courtesy of the artists.";
+export const copyright = "All image content © Rooffilm（頂樓影視）. All rights reserved.";
 
 /** Caption under the thumbnail in the info panel. */
-export const aboutLabel = "about Foam Talent Digital";
+export const aboutLabel = "about Rooffilm";
 
 /** The welcome essay shown in the "i" info panel. Plain HTML — edit the text,
  *  keep the <h1>/<p>/<em> tags. */
 export const descriptionHtml = `
-  <h1>
-  <em>Welcome to Talent 2024-2025 – the digital exhibition.</em>  </h1>
-  <h1>Here, Foam proudly presents 20 selected Talents in their very own online universe. Out of a dazzling 2,480 submissions, this final curation of exceptional work defines the new horizons of the medium of photography, thematically and technically. Highlighting the connections, this interactive network brings all Talents together and maps out their distinct artistic viewpoints. </h1>
-  <p>Spanning across the globe, the stories told by these artists reflect a universal yearning for belonging—a profound desire to anchor, to establish a connection with the past and carve out a sense of place. A driving force underpinning their work is the quest to trace heritage, untangle family lines, and explore personal identity. </p>
-  <p>Acknowledging the constructed nature of history, memory, or even their own thoughts, these artists boldly confront existing narratives. They embark on a journey of unlearning, challenging established stories, and turn to the expansive nature of photography to build new understandings and narratives, resonating more authentically with their lived experiences. </p>
-  <p>Noteworthy in their approach is the harmonious balance between tradition and innovation. The artists seamlessly blend traditional photographic techniques with cutting-edge developments, including the much-discussed realm of artificial intelligence, and other mediums such as moving image, embroidery and music. <em>Select one of the filters to zoom in on these different techniques and mediums.</em> </p>
-  <p>This digital exhibition presents the work in a truly multi-medial way, inviting you to <em>look</em>, <em>listen </em>and <em>interact</em> with the inspiring stories of <em>Talent 2024-2025</em>.</p>
+  <h1><em>Welcome to Rooffilm — the digital portfolio.</em></h1>
+  <h1>Rooffilm（頂樓影視）is a film and image production studio. Here we present a selection of our commercial, portrait and art-direction work in an interactive space. <em>Select one of the filters below to explore the works by category.</em></h1>
+  <p>（此段為佔位介紹文字,之後請提供正式內容我再替換。）</p>
 `;
 
 /** The 8 filter clusters. name = pill label; x/y/z = the 3D anchor the camera
@@ -91,7 +87,7 @@ export const artists: OverviewArtist[] = [
     "name": "Akshay Mahajan",
     "exhibitionName": "People of Clay",
     "image": "/images/art-066.png",
-    "alt": "頂樓先生影像製作 — 作品截圖",
+    "alt": "頂樓影視 — 作品截圖",
     "title": "From the series People of Clay",
     "copyright": "Akshay Mahajan",
     "position": {
@@ -134,7 +130,7 @@ export const artists: OverviewArtist[] = [
     "name": "art01",
     "exhibitionName": "art01",
     "image": "/images/art01.jpg",
-    "alt": "頂樓先生影像製作 — art01",
+    "alt": "頂樓影視 — art01",
     "title": "",
     "copyright": "",
     "position": {
